@@ -1,0 +1,24 @@
+{
+  "name": "React Dash Accelerator",
+  "description": "React Dash Accelerator",
+  "keywords": [
+    "Node.JS",
+    "JavaScript",
+    "ES6",
+    "Sass",
+    "Browersify"
+  ],
+  "repository": "https://github.com/C-Bell/REACT_DASH",
+  "success_url": "/",
+  "scripts": {
+    "test-setup": "webpack",
+    "test": "npm test"
+  },
+  "env": {},
+  "image": "heroku/nodejs",
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    }
+  ]
+}
