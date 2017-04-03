@@ -34608,6 +34608,10 @@
 	  );
 	};
 
+	Template.propTypes = {
+	  children: _react2.default.PropTypes.any
+	};
+
 	exports.default = Template;
 
 /***/ },

@@ -24,4 +24,8 @@ const Template = (props) => {
   );
 };
 
+Template.propTypes = {
+  children: React.PropTypes.any,
+};
+
 export default Template;
