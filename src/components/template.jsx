@@ -5,13 +5,7 @@ import Footer from './footer.jsx';
 
 // this is our main template component, all routes are rendered at {props.children}
 
-const templateStyle = {
-  paddingTop: '40px',
-  paddingLeft: '20px',
-  paddingRight: '20px',
-};
-
-const footerHeight = '45px';
+const footerHeight = '0px';
 
 // the bottom margin of the body is the footer height
 document.body.style.marginBottom = footerHeight;
@@ -21,7 +15,7 @@ const Template = (props) => {
     <div>
       <main>
         <Nav brandImage="img/logo.png" color="black" />
-        <div style={templateStyle}>
+        <div className="container">
           {props.children}
         </div>
       </main>

@@ -34585,13 +34585,7 @@
 
 	// this is our main template component, all routes are rendered at {props.children}
 
-	var templateStyle = {
-	  paddingTop: '40px',
-	  paddingLeft: '20px',
-	  paddingRight: '20px'
-	};
-
-	var footerHeight = '45px';
+	var footerHeight = '0px';
 
 	// the bottom margin of the body is the footer height
 	document.body.style.marginBottom = footerHeight;
@@ -34606,7 +34600,7 @@
 	      _react2.default.createElement(_nav2.default, { brandImage: 'img/logo.png', color: 'black' }),
 	      _react2.default.createElement(
 	        'div',
-	        { style: templateStyle },
+	        { className: 'container' },
 	        props.children
 	      )
 	    ),
@@ -34641,6 +34635,7 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var imgStyle = {
+	  paddingTop: '2px',
 	  marginTop: '0px',
 	  marginLeft: '15px'
 	};
@@ -34660,7 +34655,7 @@
 
 	  _createClass(Nav, [{
 	    key: 'render',
-	    value: function render(props) {
+	    value: function render() {
 	      return _react2.default.createElement(
 	        'nav',
 	        null,
@@ -34670,7 +34665,7 @@
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'brand-logo' },
-	            _react2.default.createElement('img', { alt: 'Dashboard', style: imgStyle, src: '', height: '65px' })
+	            _react2.default.createElement('img', { alt: 'Dashboard', style: imgStyle, src: '../public/img/react.png', height: '50px' })
 	          ),
 	          _react2.default.createElement(
 	            'a',
@@ -34717,9 +34712,15 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var footerStyle = {
-	  paddingTop: '0px',
-	  marginTop: '0px',
-	  backgroundColor: 'black'
+	  position: 'absolute',
+	  left: 0,
+	  bottom: 0,
+	  height: 45,
+	  borderTop: '1px solid #e7e7e7',
+	  backgroundColor: 'black',
+	  textAlign: 'center',
+	  paddingTop: '10px',
+	  width: '100%'
 	};
 
 	var logoStyle = {
@@ -34743,47 +34744,43 @@
 	        { className: 'page-footer', style: footerStyle },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'footer-copyright' },
+	          { className: 'row' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'row' },
+	            { className: 'col s3' },
+	            _react2.default.createElement('a', { className: 'white-text hide-on-small-only' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col s6' },
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'col s3' },
-	              _react2.default.createElement('a', { className: 'white-text hide-on-small-only' })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'col s6' },
+	              null,
 	              _react2.default.createElement(
 	                'div',
-	                null,
-	                _react2.default.createElement(
-	                  'div',
-	                  { className: 'center-align', style: logoStyle },
-	                  _react2.default.createElement('img', {
-	                    alt: 'NodeJS',
-	                    className: 'valign hide-on-small-only',
-	                    src: '../public/img/NodeJS_Icon.png',
-	                    height: '40px'
-	                  }),
-	                  _react2.default.createElement('img', {
-	                    alt: 'Heroku',
-	                    className: 'valign hide-on-small-only',
-	                    src: '../public/img/Heroku_Icon2.png',
-	                    height: '40px'
-	                  })
-	                )
+	                { className: 'center-align', style: logoStyle },
+	                _react2.default.createElement('img', {
+	                  alt: 'NodeJS',
+	                  className: 'valign hide-on-small-only',
+	                  src: '../public/img/NodeJS_Icon.png',
+	                  height: '40px'
+	                }),
+	                _react2.default.createElement('img', {
+	                  alt: 'Heroku',
+	                  className: 'valign hide-on-small-only',
+	                  src: '../public/img/Heroku_Icon2.png',
+	                  height: '40px'
+	                })
 	              )
-	            ),
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col s3' },
 	            _react2.default.createElement(
-	              'div',
-	              { className: 'col s3' },
-	              _react2.default.createElement(
-	                'a',
-	                { className: 'white-text right hide-on-small-only' },
-	                'By Calum Bell'
-	              )
+	              'a',
+	              { className: 'white-text right hide-on-small-only' },
+	              'By Calum Bell'
 	            )
 	          )
 	        )
@@ -34822,7 +34819,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Dash = function Dash() {
-	  return _react2.default.createElement('div', null);
+	  return _react2.default.createElement('div', { className: 'card-panel' });
 	};
 
 	exports.default = Dash;

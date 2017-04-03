@@ -9,12 +9,6 @@ const PORT = process.env.PORT || 8080;
 // serve our static stuff like style.css
 app.use('/public', [express.static('src/public')]);
 
-
-// send all requests to index.html so browserHistory in React Router works
-// protect all routes from this point onwards using our middleware
-
-// WARNING: it is important that this route stays at the bottom to ensure
-// the middleware doesn't run during the authentication process
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '/src/public/index.html'));
 });
