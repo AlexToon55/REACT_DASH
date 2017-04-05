@@ -13,7 +13,7 @@ const footerStyle = {
 };
 
 const logoStyle = {
-  paddingTop: '5px',
+  paddingTop: '10px',
 };
 
 class Footer extends React.Component {
@@ -27,20 +27,7 @@ class Footer extends React.Component {
           </div>
           <div className="col s6">
             <div>
-              <div className="center-align" style={logoStyle}>
-                <img
-                  alt="NodeJS"
-                  className="valign hide-on-small-only"
-                  src="../public/img/NodeJS_Icon.png"
-                  height="40px"
-                />
-                <img
-                  alt="Heroku"
-                  className="valign hide-on-small-only"
-                  src="../public/img/Heroku_Icon2.png"
-                  height="40px"
-                />
-              </div>
+              <div className="center-align" style={logoStyle} />
             </div>
           </div>
           <div className="col s3">

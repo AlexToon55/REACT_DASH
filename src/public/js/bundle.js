@@ -34728,7 +34728,7 @@
 	};
 
 	var logoStyle = {
-	  paddingTop: '5px'
+	  paddingTop: '10px'
 	};
 
 	var Footer = function (_React$Component) {
@@ -34760,22 +34760,7 @@
 	            _react2.default.createElement(
 	              'div',
 	              null,
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'center-align', style: logoStyle },
-	                _react2.default.createElement('img', {
-	                  alt: 'NodeJS',
-	                  className: 'valign hide-on-small-only',
-	                  src: '../public/img/NodeJS_Icon.png',
-	                  height: '40px'
-	                }),
-	                _react2.default.createElement('img', {
-	                  alt: 'Heroku',
-	                  className: 'valign hide-on-small-only',
-	                  src: '../public/img/Heroku_Icon2.png',
-	                  height: '40px'
-	                })
-	              )
+	              _react2.default.createElement('div', { className: 'center-align', style: logoStyle })
 	            )
 	          ),
 	          _react2.default.createElement(
