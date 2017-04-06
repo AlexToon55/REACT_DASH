@@ -1,11 +1,7 @@
 import React from 'react';
 
 const footerStyle = {
-  position: 'absolute',
-  left: 0,
-  bottom: 0,
   height: 45,
-  borderTop: '1px solid #e7e7e7',
   backgroundColor: 'black',
   textAlign: 'center',
   paddingTop: '10px',
@@ -21,7 +17,7 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="page-footer" style={footerStyle}>
-        <div className="row">
+        <div className="row" style={{ height: 15 }}>
           <div className="col s3">
             <a className="white-text hide-on-small-only" />
           </div>

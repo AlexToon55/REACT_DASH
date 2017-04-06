@@ -34585,7 +34585,7 @@
 
 	// this is our main template component, all routes are rendered at {props.children}
 
-	var footerHeight = '0px';
+	var footerHeight = '-45px';
 
 	// the bottom margin of the body is the footer height
 	document.body.style.marginBottom = footerHeight;
@@ -34593,18 +34593,18 @@
 	var Template = function Template(props) {
 	  return _react2.default.createElement(
 	    'div',
-	    null,
+	    { style: { height: '100%' } },
 	    _react2.default.createElement(
 	      'main',
-	      null,
+	      { style: { height: '100%' } },
 	      _react2.default.createElement(_nav2.default, { brandImage: 'img/logo.png', color: 'black' }),
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'container' },
+	        { className: 'container', style: { marginTop: -64, marginBottom: footerHeight, minHeight: '100%' } },
 	        props.children
-	      )
-	    ),
-	    _react2.default.createElement(_footer2.default, { color: 'black' })
+	      ),
+	      _react2.default.createElement(_footer2.default, { color: 'black' })
+	    )
 	  );
 	};
 
@@ -34716,11 +34716,7 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var footerStyle = {
-	  position: 'absolute',
-	  left: 0,
-	  bottom: 0,
 	  height: 45,
-	  borderTop: '1px solid #e7e7e7',
 	  backgroundColor: 'black',
 	  textAlign: 'center',
 	  paddingTop: '10px',
@@ -34748,7 +34744,7 @@
 	        { className: 'page-footer', style: footerStyle },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'row' },
+	          { className: 'row', style: { height: 15 } },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'col s3' },
