@@ -34638,14 +34638,14 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var imgStyle = {
-	  paddingTop: '2px',
-	  marginTop: '0px',
-	  marginLeft: '15px'
-	};
-
-	var titleStyle = {
-	  paddingBottom: '10px'
+	var styles = {
+	  logo: {
+	    marginTop: '5px',
+	    marginLeft: '10px'
+	  },
+	  title: {
+	    paddingBottom: '10px'
+	  }
 	};
 
 	var Nav = function (_React$Component) {
@@ -34668,12 +34668,12 @@
 	          { className: 'nav-wrapper', style: { backgroundColor: this.props.color } },
 	          _react2.default.createElement(
 	            'a',
-	            { className: 'brand-logo' },
-	            _react2.default.createElement('img', { alt: 'Dashboard', style: imgStyle, src: '../public/img/react.png', height: '50px' })
+	            { href: 'https://facebook.github.io/react/docs/hello-world.html' },
+	            _react2.default.createElement('img', { alt: 'Dashboard', style: styles.logo, src: '../public/img/react.png', height: '50px' })
 	          ),
 	          _react2.default.createElement(
-	            'a',
-	            { id: 'title', className: 'brand-logo center hide-on-med-and-down', style: titleStyle },
+	            'span',
+	            { id: 'title', className: 'brand-logo center hide-on-med-and-down', style: styles.title },
 	            'React Router Dashboard'
 	          )
 	        )
@@ -34715,16 +34715,17 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var footerStyle = {
-	  height: 45,
-	  backgroundColor: 'black',
-	  textAlign: 'center',
-	  paddingTop: '10px',
-	  width: '100%'
-	};
-
-	var logoStyle = {
-	  paddingTop: '10px'
+	var styles = {
+	  footer: {
+	    height: 45,
+	    backgroundColor: 'black',
+	    textAlign: 'center',
+	    paddingTop: '10px',
+	    width: '100%'
+	  },
+	  logo: {
+	    paddingTop: '10px'
+	  }
 	};
 
 	var Footer = function (_React$Component) {
@@ -34741,7 +34742,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'footer',
-	        { className: 'page-footer', style: footerStyle },
+	        { className: 'page-footer', style: styles.footer },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'row', style: { height: 15 } },
@@ -34756,7 +34757,7 @@
 	            _react2.default.createElement(
 	              'div',
 	              null,
-	              _react2.default.createElement('div', { className: 'center-align', style: logoStyle })
+	              _react2.default.createElement('div', { className: 'center-align', style: styles.logo })
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -34777,7 +34778,7 @@
 	}(_react2.default.Component);
 
 	Footer.propTypes = {
-	  color: _react2.default.PropTypes.string.isRequired
+	  color: _react2.default.PropTypes.string
 	};
 	Footer.defaultProps = {
 	  color: 'black'

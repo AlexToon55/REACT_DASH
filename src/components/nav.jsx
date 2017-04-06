@@ -1,13 +1,13 @@
 import React from 'react';
 
-const imgStyle = {
-  paddingTop: '2px',
-  marginTop: '0px',
-  marginLeft: '15px',
-};
-
-const titleStyle = {
-  paddingBottom: '10px',
+const styles = {
+  logo: {
+    marginTop: '5px',
+    marginLeft: '10px',
+  },
+  title: {
+    paddingBottom: '10px',
+  },
 };
 
 class Nav extends React.Component {
@@ -16,12 +16,12 @@ class Nav extends React.Component {
     return (
       <nav>
         <div className="nav-wrapper" style={{ backgroundColor: this.props.color }}>
-          <a className="brand-logo">
-            <img alt="Dashboard" style={imgStyle} src="../public/img/react.png" height="50px" />
+          <a href="https://facebook.github.io/react/docs/hello-world.html">
+            <img alt="Dashboard" style={styles.logo} src="../public/img/react.png" height="50px" />
           </a>
-          <a id="title" className="brand-logo center hide-on-med-and-down" style={titleStyle}>
+          <span id="title" className="brand-logo center hide-on-med-and-down" style={styles.title}>
 				React Router Dashboard
-			</a>
+			</span>
         </div>
       </nav>
     );

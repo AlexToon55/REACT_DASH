@@ -1,29 +1,30 @@
 import React from 'react';
 
-const footerStyle = {
-  height: 45,
-  backgroundColor: 'black',
-  textAlign: 'center',
-  paddingTop: '10px',
-  width: '100%',
-};
-
-const logoStyle = {
-  paddingTop: '10px',
+const styles = {
+  footer: {
+    height: 45,
+    backgroundColor: 'black',
+    textAlign: 'center',
+    paddingTop: '10px',
+    width: '100%',
+  },
+  logo: {
+    paddingTop: '10px',
+  },
 };
 
 class Footer extends React.Component {
 
   render() {
     return (
-      <footer className="page-footer" style={footerStyle}>
+      <footer className="page-footer" style={styles.footer}>
         <div className="row" style={{ height: 15 }}>
           <div className="col s3">
             <a className="white-text hide-on-small-only" />
           </div>
           <div className="col s6">
             <div>
-              <div className="center-align" style={logoStyle} />
+              <div className="center-align" style={styles.logo} />
             </div>
           </div>
           <div className="col s3">
@@ -35,7 +36,7 @@ class Footer extends React.Component {
   }
 }
 Footer.propTypes = {
-  color: React.PropTypes.string.isRequired,
+  color: React.PropTypes.string,
 };
 Footer.defaultProps = {
   color: 'black',
