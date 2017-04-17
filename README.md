@@ -1,5 +1,7 @@
 # React Dashboard Accelerator
 
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
 **Application Name:** React Dashboard Accelerator.
 
 **Application Description:** A Node.js template for building dashboards quickly on the React Framework.
