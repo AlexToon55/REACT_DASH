@@ -14,7 +14,7 @@
 
 **Development Framework(s):** React, React Router, Babel, Webpack
 
-**Development Standards:** This Accelerator comes with Developer Standards. These standards can be found in the `.eslintrc`
+**Development Standards:** This Accelerator comes with AirBNB Developer Standards. These standards can be found in the `.eslintrc`
 
 ------------------------------
 
@@ -28,8 +28,7 @@
 
 1. Clone the Repo.
 2. Run `npm install` to install all the node modules locally
-3. Open up another tab in your terminal or command line. In one terminal / command line run `webpack -w`. This will start Webpack and watch your React code for changes (Do not use gulp!)
-3. Rename the .envsample to .env and add your needed enviroment variables.
+3. Open up another tab in your terminal or command line. In one terminal / command line run `webpack -w`. This will start Webpack and watch your React code for changes
 4. In your other tab run `heroku local` (if using heroku) or `npm start` to start your server.
 5. Go to localhost:5000 and your sever should be running there.
 
@@ -53,7 +52,7 @@ To use this flavour of the web accelerator, create your react pages under: `src/
 
 **---pages** :: *React router pages go in here*
 
-**--controllers** :: *This file contains all the server side controllers [TRY AND MAKE MODULAR CODE ]*
+**--controllers** :: *This file contains all the server side controllers*
 
 **--public** :: *This folder contains all the front end scss javascript and images*
 
