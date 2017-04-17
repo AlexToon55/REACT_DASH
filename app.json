@@ -1,0 +1,47 @@
+{
+  "name": "React Dash Accelerator",
+  "description": "React Dash Accelerator",
+  "keywords": [
+    "Node.JS",
+    "JavaScript",
+    "ES6",
+    "Sass",
+    "Browersify"
+  ],
+  "repository": "https://github.com/C-Bell/REACT_DASH",
+  "success_url": "/",
+  "scripts": {
+    "test-setup": "webpack",
+    "test": "npm test"
+  },
+  "env": {},
+  "image": "heroku/nodejs",
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    }
+  ]
+}
+
+  "name": "React Dash Accelerator",
+  "description": "React Dash Accelerator.",
+  "repository": "https://github.com/C-Bell/REACT_DASH",
+  "logo": "https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png",
+  "template": "https://github.com/C-Bell/REACT_DASH",
+  "keywords": [
+    "node",
+    "express",
+    "handlebars"
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "Standard-1X"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
